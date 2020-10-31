@@ -1,7 +1,12 @@
 import React from 'react'
+import Hero from './Hero'
 
-function App() {
-  return <div className="App">Hello</div>
+const App = () => {
+  return (
+    <main className="app">
+      <Hero />
+    </main>
+  )
 }
 
 export default App

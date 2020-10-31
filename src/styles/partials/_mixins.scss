@@ -1,15 +1,11 @@
-/**
-* Responsive utilities
-*/
+/* Responsive mixins */
 @mixin media-min-width($width) {
 	@media (min-width: $width) {
 		@content;
 	}
 }
 
-/**
-* Mobile first breakpoints
-*/
+/* Mobile first breakpoints */
 @mixin breakpoint-tablet {
 	@include media-min-width(768px) {
 		@content;

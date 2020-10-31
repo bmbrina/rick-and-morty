@@ -1,11 +1,15 @@
-@import '_partials/reset';
-@import '_partials/mixins';
-@import '_partials/utils';
-@import '_partials/fonts';
-@import '_partials/colors';
+/* Base styles */
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/utils';
+@import 'partials/fonts';
+@import 'partials/colors';
 
 body {
 	font-family: $font-primary;
 	font-size: 16px;
 	font-style: normal;
 }
+
+/* Components styles */
+@import 'components/hero';
