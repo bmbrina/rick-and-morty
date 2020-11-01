@@ -21,4 +21,19 @@ interface Character {
   created: string
 }
 
-export type { Status, Gender, Character }
+interface Action {
+  type: string
+  payload: any
+}
+
+interface AppDataProps {
+  currentPage: number
+  characters: Character[]
+  dispatch: (action: Action) => void
+}
+
+interface ReactChildrenProps {
+  children: React.ReactNode
+}
+
+export type { Status, Gender, Character, Action, AppDataProps, ReactChildrenProps }

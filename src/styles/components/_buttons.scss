@@ -1,0 +1,24 @@
+.btn {
+	border-radius: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	height: 48px;
+	letter-spacing: .8px;
+	line-height: 19px;
+	padding: 15px 30px;
+	position: relative;
+	text-transform: uppercase;
+	transition: all .15s linear;
+	width: 100%;
+
+	&--primary {
+		background-color: $color-blue;
+		color: $color-green;
+
+		&:active
+		&:focus,
+		&:hover {
+			background-color: darken($color-blue, 10%);
+		}
+	}
+}

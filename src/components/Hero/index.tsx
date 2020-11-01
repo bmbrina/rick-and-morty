@@ -1,18 +1,20 @@
 import React from 'react'
-import data from '../../data/app.json'
 import { ReactComponent as RickAndMorty } from '../../images/rick-and-morty.svg'
+import Button from '../Button'
 
-const Hero = () => {
-  const { hero } = data
+const Hero = ({ title, buttonText, buttonClick }: any) => {
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero__container container">
         <h1 className="hero__title" id="hero-title">
-          {hero.title}
+          {title}
         </h1>
         <div className="hero__img">
           <RickAndMorty />
         </div>
+        {buttonText && (
+          <Button text={buttonText} handleClick={buttonClick} classList="btn--primary hero__btn" />
+        )}
       </div>
     </section>
   )

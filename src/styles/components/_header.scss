@@ -1,0 +1,30 @@
+.header {
+	box-shadow: 0 2px 4px 0 rgba($color-black, .1);
+
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+	}
+
+	&__logo {
+		height: 30px;
+
+		svg {
+			height: inherit;
+			width: inherit;
+
+			g {
+				fill: $color-blue-light;
+			}
+		}
+	}
+
+	@include breakpoint-tablet {
+		&__logo {
+			height: 50px;
+			width: 150px;
+		}
+	}
+}

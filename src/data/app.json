@@ -1,5 +1,9 @@
 {
-  "hero": {
-    "title": "Rick and Morty Characters"
+  "home": {
+    "title": "Characters List"
+  },
+  "notFound": {
+    "title": "The page you're looking for doesn't exist.",
+    "buttonText": "Go to Homepage"
   }
 }
