@@ -23,13 +23,14 @@ interface Character {
 
 interface Action {
   type: string
-  payload: any
+  payload?: any
 }
 
 interface AppDataProps {
   currentPage: number
+  totalPages: number
   characters: Character[]
-  dispatch: (action: Action) => void
+  appDispatch: (action: Action) => void
 }
 
 interface ReactChildrenProps {

@@ -1,8 +1,17 @@
 import appConstants from '../constants/appConstants'
 import { Character } from '../../types'
 
-const updatePage = (payload: number) => ({
+const updateCurrentPage = (payload: number) => ({
   type: appConstants.UPDATE_CURRENT_PAGE,
+  payload
+})
+
+const resetCurrentPage = () => ({
+  type: appConstants.UPDATE_CURRENT_PAGE
+})
+
+const setTotalPages = (payload: number) => ({
+  type: appConstants.SET_TOTAL_PAGES,
   payload
 })
 
@@ -11,4 +20,4 @@ const setCharacters = (payload: Character[]) => ({
   payload
 })
 
-export { updatePage, setCharacters }
+export { updateCurrentPage, resetCurrentPage, setTotalPages, setCharacters }

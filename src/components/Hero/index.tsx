@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as RickAndMorty } from '../../images/rick-and-morty.svg'
+import { ReactComponent as RickAndMorty } from '../../images/illustrations/rick-and-morty.svg'
 import Button from '../Button'
 
 const Hero = ({ title, buttonText, buttonClick }: any) => {

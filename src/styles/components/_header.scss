@@ -1,5 +1,7 @@
 .header {
 	box-shadow: 0 2px 4px 0 rgba($color-black, .1);
+	position: relative;
+	z-index: 1;
 
 	&__container {
 		align-items: center;

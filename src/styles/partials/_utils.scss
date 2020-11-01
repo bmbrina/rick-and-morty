@@ -1,7 +1,7 @@
 /* Utility classes */
 .container {
 	@include breakpoint-tablet {
-		width: 650px;
+		width: 700px;
 	}
 
 	@include breakpoint-laptop {
@@ -13,5 +13,5 @@
 	}
 
 	margin: 0 auto;
-	width: 90%;
+	width: 95%;
 }

@@ -1,0 +1,18 @@
+/* MaterialUI overrides */
+.MuiPagination-ul {
+	justify-content: center;
+	padding-top: 30px !important;
+}
+
+.MuiPaginationItem-root {
+	color: $color-white !important;
+
+	&.Mui-selected {
+		background-color: rgba($color-green-neon, .1) !important;
+		color: $color-green-neon !important;
+	}
+}
+
+.MuiPaginationItem-icon {
+	color: $color-green-neon !important;
+}

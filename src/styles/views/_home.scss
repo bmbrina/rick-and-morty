@@ -1,6 +1,7 @@
 .home {
+	background-color: $color-blue;
+
 	&__content {
-		background-color: $color-blue;
-		height: 60vh;
+		min-height: 60vh;
 	}
 }

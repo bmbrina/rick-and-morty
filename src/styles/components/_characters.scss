@@ -1,0 +1,86 @@
+$card-border-radius: 4px;
+
+.characters {
+	padding: 50px 0;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__card {
+		background-color: $color-white;
+		border-radius: $card-border-radius;
+		box-shadow: 0 8px 16px 0 rgba($color-white, .1);
+		color: $color-blue;
+		margin: 15px;
+		width: 300px;
+	}
+
+	&__card-img {
+		border-radius: $card-border-radius $card-border-radius 0 0;
+		min-height: 300px;
+		width: 100%;
+	}
+
+	&__card-content {
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 300px);
+		justify-content: space-between;
+		padding: 20px 15px;
+	}
+
+	&__card-name {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__card-info {
+		padding-bottom: 10px;
+	}
+
+	&__card-status {
+		padding-left: 15px;
+		position: relative;
+		text-transform: capitalize;
+
+		&::before {
+			background-color: $color-yellow;
+			border-radius: 50%;
+			content: '';
+			height: 10px;
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			width: 10px;
+		}
+
+		&--alive {
+			&::before {
+				background-color: $color-green;
+			}
+		}
+
+		&--dead {
+			&::before {
+				background-color: $color-red;
+			}
+		}
+	}
+
+	&__card-origin,
+	&__card-last-seen {
+		margin-top: 15px;
+	}
+
+	&__card-subtitle {
+		color: $color-gray;
+		display: block;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+}

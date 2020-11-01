@@ -7,17 +7,18 @@ const [useAppContext, AppCtxProvider] = createCtx<AppDataProps>()
 
 const initialState = {
   currentPage: 1,
+  totalPages: 0,
   characters: []
 }
 
 const AppProvider = ({ children }: ReactChildrenProps) => {
-  const [state, dispatch] = useReducer(appReducer, initialState)
+  const [state, appDispatch] = useReducer(appReducer, initialState)
 
   return (
     <AppCtxProvider
       value={{
         ...state,
-        dispatch
+        appDispatch
       }}
     >
       {children}
