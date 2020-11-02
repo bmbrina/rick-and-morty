@@ -8,7 +8,7 @@ import * as Routes from './routes'
 const App = () => {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/rick-and-morty">
         <AppProvider>
           <Header />
           <Switch>
