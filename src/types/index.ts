@@ -30,6 +30,7 @@ interface AppDataProps {
   currentPage: number
   totalPages: number
   characters: Character[]
+  filters: object
   appDispatch: (action: Action) => void
 }
 

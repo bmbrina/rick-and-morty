@@ -6,10 +6,6 @@ const updateCurrentPage = (payload: number) => ({
   payload
 })
 
-const resetCurrentPage = () => ({
-  type: appConstants.UPDATE_CURRENT_PAGE
-})
-
 const setTotalPages = (payload: number) => ({
   type: appConstants.SET_TOTAL_PAGES,
   payload
@@ -20,4 +16,9 @@ const setCharacters = (payload: Character[]) => ({
   payload
 })
 
-export { updateCurrentPage, resetCurrentPage, setTotalPages, setCharacters }
+const setFilters = (payload: object) => ({
+  type: appConstants.SET_FILTERS,
+  payload
+})
+
+export { updateCurrentPage, setTotalPages, setCharacters, setFilters }

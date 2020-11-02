@@ -8,7 +8,12 @@ const [useAppContext, AppCtxProvider] = createCtx<AppDataProps>()
 const initialState = {
   currentPage: 1,
   totalPages: 0,
-  characters: []
+  characters: [],
+  filters: {
+    name: '',
+    status: '',
+    gender: ''
+  }
 }
 
 const AppProvider = ({ children }: ReactChildrenProps) => {

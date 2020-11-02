@@ -10,11 +10,6 @@ const appReducer = (state: any, action: Action) => {
         ...state,
         currentPage: payload
       }
-    case appConstants.RESET_CURRENT_PAGE:
-      return {
-        ...state,
-        currentPage: 1
-      }
     case appConstants.SET_TOTAL_PAGES:
       return {
         ...state,
@@ -24,6 +19,15 @@ const appReducer = (state: any, action: Action) => {
       return {
         ...state,
         characters: payload
+      }
+    case appConstants.SET_FILTERS:
+      return {
+        ...state,
+        currentPage: 1,
+        filters: {
+          ...state.filters,
+          [payload.name]: payload.value
+        }
       }
     default:
       return state

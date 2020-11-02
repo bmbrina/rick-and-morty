@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({ text, classList, handleClick }: any) => {
+const Button = ({ text, classList, handleClick, hideText }: any) => {
   return (
     <button
       className={`btn ${classList}`}
@@ -8,7 +8,7 @@ const Button = ({ text, classList, handleClick }: any) => {
       onClick={handleClick}
       onKeyPress={handleClick}
     >
-      {text}
+      <span className={`btn__text ${hideText ? 'visually-hidden' : ''}`}>{text}</span>
     </button>
   )
 }
