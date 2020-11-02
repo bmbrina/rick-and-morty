@@ -27,6 +27,7 @@ interface Action {
 }
 
 interface AppDataProps {
+  loading: boolean
   currentPage: number
   totalPages: number
   characters: Character[]

@@ -21,4 +21,8 @@ const setFilters = (payload: object) => ({
   payload
 })
 
-export { updateCurrentPage, setTotalPages, setCharacters, setFilters }
+const setLoadingState = () => ({
+  type: appConstants.SET_LOADING_STATE
+})
+
+export { updateCurrentPage, setTotalPages, setCharacters, setFilters, setLoadingState }

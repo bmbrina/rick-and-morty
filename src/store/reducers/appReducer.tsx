@@ -29,6 +29,11 @@ const appReducer = (state: any, action: Action) => {
           [payload.name]: payload.value
         }
       }
+    case appConstants.SET_LOADING_STATE:
+      return {
+        ...state,
+        loading: !state.loading
+      }
     default:
       return state
   }
