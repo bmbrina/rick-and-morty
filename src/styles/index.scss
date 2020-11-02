@@ -1,0 +1,32 @@
+/* Base styles */
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/utils';
+@import 'partials/fonts';
+@import 'partials/colors';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $color-white;
+	font-family: $font-primary;
+	font-size: 16px;
+	font-style: normal;
+}
+
+/* Components styles */
+@import 'components/header';
+@import 'components/hero';
+@import 'components/buttons';
+@import 'components/characters';
+@import 'components/pagination';
+@import 'components/filters';
+@import 'components/form-group';
+@import 'components/search-bar';
+@import 'components/loader';
+@import 'components/footer';
+
+/* Views styles */
+@import 'views/home';

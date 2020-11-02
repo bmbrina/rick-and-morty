@@ -1,0 +1,29 @@
+@keyframes spinnerAnim {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+.loader {
+	&--show {
+		.loader__spinner {
+			display: block;
+		}
+	}
+
+	&__spinner {
+		display: none;
+		margin: 0 auto;
+
+		&::after {
+			animation: spinnerAnim 1.5s linear infinite;
+			border: 10px solid $color-green-neon;
+			border-radius: 50%;
+			border-right-color: $color-gray;
+			border-top-color: $color-gray;
+			content: '';
+			display: block;
+			height: 70px;
+			width: 70px;
+		}
+	}
+}

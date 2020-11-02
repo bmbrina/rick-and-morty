@@ -1,0 +1,42 @@
+.filters {
+	&__title {
+		color: $color-green-neon;
+		font-size: 24px;
+		font-weight: bold;
+		margin: 0 5px 15px;
+		text-transform: uppercase;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+
+		.search-bar {
+			flex: 0 100%;
+			padding: 0 5px;
+
+			.form-group {
+				flex: 0 100%;
+				padding: 0;
+			}
+		}
+
+		.form-group {
+			flex: 0 50%;
+			padding: 0 5px;
+		}
+	}
+
+	@include breakpoint-tablet {
+		&__container {
+			.search-bar,
+			.form-group {
+				flex: 0 33%;
+			}
+		}
+	}
+
+	@include breakpoint-desktop {
+		margin-top: 15px;
+	}
+}

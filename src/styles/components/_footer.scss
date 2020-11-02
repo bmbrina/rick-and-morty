@@ -1,0 +1,13 @@
+.footer {
+	background-color: $color-blue;
+	text-align: center;
+
+	&__container {
+		border-top: 1px solid $color-green-neon;
+		padding: 20px 0;
+	}
+
+	&__link {
+		color: $color-green-neon;
+	}
+}

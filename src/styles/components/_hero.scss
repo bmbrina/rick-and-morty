@@ -1,0 +1,50 @@
+.hero {
+	background-color: $color-white;
+	min-height: calc(50vh - 50px);
+	padding: 20px 0;
+	position: relative;
+
+	&__container {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: inherit;
+	}
+
+	&__title {
+		color: $color-blue;
+		font-size: 38px;
+		font-weight: bold;
+		text-align: center;
+		z-index: 1;
+	}
+
+	&__img {
+		bottom: 0;
+		height: 90%;
+		position: absolute;
+
+		svg {
+			height: 100%;
+			width: 100%;
+
+			g {
+				fill: rgba($color-gray, .3);
+			}
+		}
+	}
+
+	&__btn {
+		margin: 30px auto 0;
+		max-width: 300px;
+	}
+
+	@include breakpoint-tablet {
+		min-height: calc(40vh - 50px);
+
+		&__title {
+			font-size: 52px;
+		}
+	}
+}
