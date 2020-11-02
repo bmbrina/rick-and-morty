@@ -7,13 +7,11 @@ const API = {
     return axios
       .get(`${this.url}/${endpoint}/`, { params })
       .then((response) => {
-        console.log(response)
         const { info, results } = response.data
         const { pages } = info
         return { pages, characters: results }
       })
-      .catch((error) => {
-        console.log('Error fetching characters', error)
+      .catch(() => {
         return { pages: 0, characters: [] }
       })
   }
