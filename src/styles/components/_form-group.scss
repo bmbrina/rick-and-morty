@@ -13,11 +13,14 @@
 
 	&__input,
 	&__select {
+		background-color: $color-white;
 		border: 2px solid $color-gray;
 		border-radius: 3px;
 		color: $color-blue;
 		font-family: $font-primary;
 		font-size: 16px;
+		height: 45px;
+		margin: 0;
 		padding: 10px;
 		transition: border-color .15s ease-in-out;
 		width: 100%;
